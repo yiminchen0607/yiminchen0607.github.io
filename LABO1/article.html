@@ -4,6 +4,7 @@
         <title>Artisan Martin</title>
         <meta charset="utf-8">
         <link rel="icon" href="favicon_labo.ico">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <div>
@@ -12,13 +13,54 @@
             </div>
             <nav class="nav">
                 <ul>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="connexion.html">Renseignement personnel</a></li>
-                    <li><a href="article.html">Nos &oelig;uvres</a></li>
                 </ul>
             </nav>    
         </div>
-        <table>
-
-        </table>
+        <form>
+            <div class="article">
+            <table>
+                <tr>
+                    <td><img src="article1.JPG">
+                        <p>Petite maison en bambou, objet de d&eacute;coration &agrave;pouvant &ecirc;tre pos&eacute;e sur la table.</p>
+                        
+                        <label for="quantit&eacute;">Prix: 80$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantit&eacute;</label>
+                        <input type="number" name="article1 quantité" min="1" max="8">
+                    </td>
+                    <td><img src="article2.JPG">
+                        <p>Panier fabriqu&eacute; &agrave; partir de magazines jet&eacute;s</p>
+                        <label for="quantit&eacute;">Prix: 40$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantit&eacute;</label>
+                        <input type="number" name="article2 quantité" min="1" max="10">
+                    </td>
+                    <td><img src="article3.JPG">
+                        <p>Sac &agrave; dos fabriqu&eacute; &agrave; partir de jeans jet&eacute;s</p>
+                        <label for="quantit&eacute;">Prix: 60$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantit&eacute;</label>
+                        <input type="number" name="article3 quantité" min="1" max="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="article4.JPG">
+                        <p>Une vache active fabriqu&eacute;e &agrave; partir d'une vieille armoire</p>
+                        <label for="quantit&eacute;">Prix: 150$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantit&eacute;</label>
+                        <input type="number" name="article4 quantité" min="1" max="2">
+                    </td>
+                    <td><img src="article5.JPG">
+                        <p>Chouette taill&eacute;e dans une section enti&egrave;re de tronc d'arbre</p>
+                        <label for="quantit&eacute;">Prix: 200$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantit&eacute;</label>
+                        <input type="number" name="article5 quantité" min="1" max="3">
+                    </td>
+                    <td><img src="article6.JPG">
+                        <p>Lampe de table petit homme, le bois a &eacute;t&eacute; ramass&eacute; dans le parc</p>
+                        <label for="quantit&eacute;">Prix: 40$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantit&eacute;</label>
+                        <input type="number" name="article6 quantité" min="1" max="5">
+                    </td>
+                </tr>
+            </table>
+            <div class="submit">
+                <input class="bouton" type="submit" value="Ajouter au panier">
+              
+            </div>
+        </form>
     </body>
     
