@@ -20,33 +20,51 @@
         </div>
         <div class="info_client">
             <fieldset>
-                <legend>Renseignement personnel</legend>
-            <form action="">
+                <legend>Inscription</legend>
+            <form>
                 <div >
                     <label for="username">Nom d'utilisateur:</label>
-                    <input type="text" name="username" required>
+                    <input type="text"  required>
                 </div>
                 
                 <div>
                     <label for="pass">Password (8 characters minimum):</label>
-                    <input type="password" name="password"
+                    <input type="password" 
                           minlength="8" required>
                 </div>
                 <div>
                     <label for="phone">Num&eacute;ro du t&eacute;l&eacute;phone: </label>
-                    <input type="tel" name="phone" required>
+                    <input type="tel"  required>
                 </div>
                 <div>
                     <label for="courriel">courriel: </label>
-                    <input type="email" name="courriel" required>
+                    <input type="email"  required>
                 </div>
                 <div>
                     <label for="adresse">Adresse: </label>
-                    <input type="text" name="adresse" required>
+                    <input type="text"  required>
                 </div>
                 <div class="envoyer">
-                    <input class="bouton" type="submit" value="Envoyer!">
+                    <input class="bouton" type="submit" value="S'inscrire">
                 </div>
             </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>connexion</legend>
+                <form>
+                    <div >
+                        <label for="username">Nom d'utilisateur:</label>
+                        <input type="text"  required>
+                    </div>
+                    <div>
+                        <label for="pass">Password (8 characters minimum):</label>
+                        <input type="password" 
+                              minlength="8" required>
+                    </div>
+                    <div class="envoyer">
+                        <input class="bouton" id ="connexion" type="submit" value="Se connexter">
+                    </div>
+                </form>
             </fieldset>
         </div>
