@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>changer image</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            *{
+                margin:0;
+                padding:0;
+            }
+            #outer{
+                width:309px;
+                margin:20px auto;
+                padding: 10px;
+                background-color: aquamarine;
+                text-align: center;
+            }
+            button{
+                width: 70px;
+                margin: 5px;
+            }
+        </style>
+        <script type="text/javascript">
+            window.onload = function(){
+                list_image =["image1.ico", "image2.ico","image3.ico","image4.ico"]
+                var img = document.querySelector("img");
+                var pre = document.querySelector("#pre");
+                var next = document.querySelector("#next");
+                var index = 0;
+                next.onclick = function(){
+                    index++;
+                    if (index>list_image.length-1){
+                        index = 3;
+                    }
+                    img.src = list_image[index];
+                    alert(index)
+                };
+
+                pre.onclick = function(){
+                    
+                    index--;
+                    if(index<0){
+                        index = 0;
+                    }
+                    img.src = list_image[index];
+                    alert(index)
+                };
+            }
+        </script>
+    </head>
+    <body>
+        <div id="outer">
+        <p id="info"></p>
+        <img src="image1.ico"/>
+
+        <button id="pre">previous</button>
+        <button id="next">Next</button>
+        </div>
+    </body>
+</html>
