@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculatrice IMC</title>
+    <script type="text/javascript">
+        window.onload = function(){
+            var taille = document.querySelector("#taille");
+            var pois = document.querySelector("#pois");
+            var button = document.querySelector("#submit1");
+            var resultat = document.querySelector("#resultat");
+            button.onclick = function(){
+                var imc = pois.value / taille.value**2
+                imc = imc.toFixed(2)
+                resultat.innerHTML = imc
+                alert(imc)
+            }
+        }
+    </script>
+
+  </head>
+  <body>
+    <h1>Calculatrice IMC</h1>
+      <div>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="taille">Taille</td>
+                    <td><input type="text" id="taille"></td>
+                </tr>
+                <tr>
+                    <td><label for="pois">Pois</td>
+                    <td><input type="text" id="pois"></td>
+                </tr>
+            </table>
+            <button type="submit" id="submit1">Calculer(métrique)</button>
+            <button type="submit" id="submit2">Calculer</button>
+            <p id="resultat"></p>
+        </form>
+      </div>
+        
+      
+  </body>
+</html>
