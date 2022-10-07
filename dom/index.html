@@ -4,25 +4,44 @@
     <meta charset="utf-8">
     <title>Calculatrice IMC</title>
     <script type="text/javascript">
+
         window.onload = function(){
-            var taille = document.querySelector("#taille");
-            var pois = document.querySelector("#pois");
-            var button = document.querySelector("#submit1");
-            var resultat = document.querySelector("#resultat");
-            button.onclick = function(){
-                var imc = pois.value / taille.value**2
-                imc = imc.toFixed(2)
-                resultat.innerHTML = imc
-                alert(imc)
-            }
+            const taille = document.querySelector("#taille");
+            const pois = document.querySelector("#pois");
+            const button1 = document.querySelector("#submit1");
+            const button2 = document.querySelector("#submit2");
+            const resultat = document.querySelector("span");
+            const block = document.querySelector('div');
+            const all = document.querySelector('*');
+            const table = document.querySelector('table')
+            block.style.width = '30%';
+            block.style.backgroundColor = 'rgb(223, 213, 213)';
+            block.style.marginLeft = '35%';
+            block.style.marginTop = '20%';
+            block.style.textAlign = 'center';
+            block.style.borderRadius = '20px';
+            all.style.backgroundColor = 'yellow';
+            all.style.margin = '0%'
+            all.style.padding = '0%'
+            button1.style.margin = '15px';
+            table.marginLeft = '0, auto'
+            button1.addEventListener('click' ,function(){
+                var imc = (pois.value / taille.value**2).toFixed(2)
+                resultat.textContent = imc
+                alert(imc)})
+            button2.addEventListener('click' ,function(){
+                var imc = (703*pois.value / taille.value**2).toFixed(2)
+                resultat.textContent = imc
+                
+            })
         }
     </script>
 
   </head>
   <body>
-    <h1>Calculatrice IMC</h1>
+    
       <div>
-        <form>
+        <h1>Calculatrice IMC</h1>
             <table>
                 <tr>
                     <td><label for="taille">Taille</td>
@@ -33,10 +52,10 @@
                     <td><input type="text" id="pois"></td>
                 </tr>
             </table>
-            <button type="submit" id="submit1">Calculer(métrique)</button>
-            <button type="submit" id="submit2">Calculer</button>
-            <p id="resultat"></p>
-        </form>
+            <button  id="submit1">Calculer(kg,m)</button>
+            <button  id="submit2">Calculer(lb,inche))</button>
+            <p id="resultat">résultat: <span></span></p>
+        
       </div>
         
       
