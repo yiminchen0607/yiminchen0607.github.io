@@ -1,8 +1,27 @@
-*{background-color: rgb(91, 46, 196);}
-divcartes{
-    width: 100%;
+body{background-color: rgb(91, 46, 196);
+    margin: 0%;
+    padding: 0%;
+}
+#divcartes{
+    width: 90%;
     text-align: center;
+    background-color:yellow;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 5%;
+    border-radius: 30px;
 }
 img{width: 6%;
     
+    padding: 5px;
+}
+.button{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+button{
+    background-color: yellow;
+    font-size: 20px;
+    border-radius: 10px;
 }
