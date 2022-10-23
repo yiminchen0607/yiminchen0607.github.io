@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS</title>
+<style>
+    body{background-color: beige;}
+    ul li{
+        list-style: none;
+        font-size: 20px;
+        display: inline;
+        padding: 0 10px;
+    }
+    #h1{
+        width: 100%;
+        text-align: center;
+        margin-top: 5%;
+    }
+    nav{
+        width: 100%;
+        text-align: center;
+        margin-top: 5%;
+    }
+    nav button{
+        width: 100px;
+        font-size: large;
+        border-radius: 10px;
+    }
+    .ligne1{font-style: italic;}
+    .ligne2{
+        font-style: oblique;
+        font-weight: bold;
+    }
+    /*----------------------------------------------*/
+    .btn_rond{
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        color: rgb(252, 249, 249);
+        border-radius: 50%;
+        background-color: rgb(55, 197, 66);
+    }
+    .btn_rond:hover {background-color: rgb(235, 11, 11);}
+    .btn_rond:active {
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);}
+    .ligne1>.col1{text-align: center;}
+    .sodas{
+        font: bold;
+        background-color: aquamarine;
+    }
+    .ligne1>.col3>p,.ligne1>.col3 div,.ligne1>.col3 label{
+        font: 1rem 'Fira Sans', sans-serif;
+        background-color: rgb(255, 145, 0);
+    }
+    .ligne1>.col3 input{margin: 5px;}
+    .ligne2>.col1 label{
+        display: block;
+        margin-top: 5px;
+    }
+    .ligne2>.col1 input{
+        margin-top: 5px;
+        background-color: rgb(186, 206, 199);
+    }
+    #login{
+        background-color: rgb(87, 209, 142);
+        border-radius: 5px;
+    }
+    #choose{
+        font:1rem 'Fira Sans', sans-serif;
+        font-weight: bold;
+    }
+    .ligne3>.col2 label{
+        font-style: italic;
+        font-size: 15px;
+    }
+    #search{
+        border-radius: 30px;
+        background-color: rgb(125, 125, 231);
+    }
+    input[type="reset"],input[type="submit"]{
+        border-radius: 8px;
+        background-color: rgb(211, 198, 180);
+    }
+    .col3 legend{font-weight: 400;}
+    .col3>fieldset{
+        background-image: url("hotdog.ico");
+        border-radius: 20px;
+    }
+    .ligne1>.col3{
+        background-color: rgb(255, 145, 0);
+        font-size: 30px;
+    }
+    .forecast{
+        font-size: 10px;
+        padding: 10px;
+        background-color: #eee;
+        font-style: italic;
+    }
+    #forcasthead{
+        background-color: rgb(158, 243, 73);
+        font-style: normal;
+        font-size: 20px;
+    }
+    .day-forecast h2{background-color: rgb(231, 231, 76);}
+    aside {
+        width: 60%;
+        padding-left: 5px;
+        margin-left: 5px;
+        float: right;
+        box-shadow: inset 5px 0 5px -5px #010412;
+        font-style: italic;
+        color: #40aae7;
+    }
+    aside > p {margin: 5px;}
+    blockquote {margin:5px;}
+    blockquote p {
+        padding: 15px;
+        background: rgb(189, 135, 135);
+        border-radius: 20px;
+    }
+    /*-----------------------------------------------------------------*/
+    form{
+        margin: 20px;
+        background-color: white;
+        font-style:italic;
+    }
+    form div{margin:10px}
+    .select{
+        background-color: aquamarine;
+        font-style: normal;
+    }
+    .story{
+        background-color: gainsboro;
+    }
+    #story{background-color: aqua;}
+    #champion-select{background-color: rgb(152, 177, 180);}
+    .rad{font-style: oblique;
+        font-size: 20px;
+        background-color: rgb(199, 175, 143);}
+    #btn_final{
+        background-color: yellow;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+    <div id="h1">
+        <h1>CSS</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><button>Accueil</button></a></li>
+            <li><a href="HTML.html"><button>HTML</button></a></li>
+            <li><a href="Javascript.html"><button>Javascript</button></a></li>
+            <li><a href="Web_API.html"><button>Web API</button></a></li>
+        </ul>
+    </nav>
+<table border="4">
+<tr class="ligne1">
+    <td class="col1">
+        <input class="btn_rond"
+       type="button"
+       value="BOOM!!!!">
+    </td>
+    <td class="col2">
+        <fieldset class="sodas">
+            <legend>Choose sodas:</legend>
+            <div>
+              <input type="checkbox" id="Coca-Cola" 
+                     checked>
+              <label for="Coca-Cola">Coca-Cola</label>
+            </div>
+        
+            <div>
+              <input type="checkbox" id="Pepsi">
+              <label for="Pepsi">Pepsi</label>
+            </div>
+        </fieldset>
+    </td>
+    <td class="col3">
+        <p>Choose your bedroom color:</p>
+        <div>
+            <input type="color" id="floor"
+                value="#e66465">
+            <label for="floor">floor</label>
+        </div>
+        <div>
+            <input type="color" id="ceiling"
+                    value="#f6b73c">
+            <label for="ceiling">ceiling</label>
+        </div>
+    </td>
+</tr>
+<tr class="ligne2">
+    <td class="col1">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="pass">Password (8 characters minimum):</label>
+            <input type="password" id="pass"
+                   minlength="8" required>
+        </div>
+        <input id="login" type="submit" value="Sign in">
+    </td>
+    <td class="col2">
+        <div>
+            <fieldset>
+                <label id="choose" for="monster">Choose a profile picture:</label>
+                <input type="file" id="monster" accept="image/ico, image/jpeg">
+            </fieldset>
+        </div>
+    </td>
+    <td class="col3">
+        <form>
+            <fieldset>
+                <legend>Number of lotto ticket:</legend>
+                <input type="text"/>
+                <input type="reset" value="Reset">
+                <input type="submit" value="$Submit$">
+            </fieldset>
+        </form>
+    </td>
+</tr>
+<tr class="ligne3">
+    <td class="col1">
+        <label for="site-search">Search something?</label>
+        <input type="search" id="site-search">
+        <button id="search">Search</button>
+    </td>
+    <td class="col2">
+        <fieldset>
+        <legend>Audio settings:</legend>
+
+        <div>
+            <input type="range" id="treble"
+                    min="0" max="20" value="0">
+            <label for="treble">Treble</label>
+        </div>
+        <div>
+            <input type="range" id="bass"
+                    min="0" max="40" value="0" step="4">
+            <label for="bass">Bass</label>
+        </div>
+        </fieldset>
+
+
+    </td>
+    <td class="col3">
+        <fieldset>
+            <legend>Number of hotdog (0-100):</legend>
+            <input type="number" min="0" max="100">
+        </fieldset>
+    </td>
+</tr>
+<tr>
+    <td>
+        <article class="forecast">
+            <h1 id="forcasthead">Weather forecast for Laval</h1>
+            <article class="day-forecast">
+                <h2>28 septembre 2022</h2>
+                <p>Sunny.</p>
+            </article>
+            <article class="day-forecast">
+                <h2>29 septembre 2022</h2>
+                <p>Periods of rain.</p>
+            </article>
+            <article class="day-forecast">
+                <h2>30 septembre 2022</h2>
+                <p>Heavy rain.</p>
+            </article>
+        </article>
+    </td>
+    <td>
+        <p>Rain is expected to change to snow Thursday through Friday in areas of northeastern Quebec, bordering Labrador. </p>
+        <aside>
+            <p>Visit our Complete Guide to Fall 2022 for an in-depth look at the Fall Forecast, tips to plan for it and much more!</p>
+        </aside>
+
+        <p>Only a few communities, such as Fermont and Schefferville, Que., are expected to be affected. Up to 15 cm could accumulate by the time the system departs.</p>
+
+
+    </td>
+    <td>
+        <figure>
+            <blockquote cite="https://yiminchen0607.github.io/test/">
+                <p>
+                        La rue assourdissante autour de moi hurlait.<br>
+                Longue, mince, en grand deuil, douleur majestueuse,<br>
+                Une femme passa, d&rsquo;une main fastueuse<br>
+                Soulevant, balançant le feston et l&rsquo;ourlet
+                </p>
+            </blockquote>
+            <figcaption>—Charles Baudelaire, <cite>À Une Passante</cite></figcaption>
+        </figure>
+    </td>
+</tr>
+</table>
+
+<form>
+    <div class="rad">
+        <fieldset>
+            <legend>Choose your favorite chanteur</legend>
+        
+            <input type="radio" id="MJ">
+            <label for="MJ">MJ</label><br/>
+        
+            <input type="radio" id="prince">
+            <label for="prince">prince</label><br/>
+        
+            <input type="radio" id="elvis presley">
+            <label for="elvis presley">elvis presley</label>
+        </fieldset>
+    </div>
+
+    <div class="select">
+        <label for="champion-select">Choose a champion:</label>
+        <select id="champion-select">
+            <option value="">--Please choose an option--</option>
+            <option value="warrior">warrior</option>
+            <option value="mage">mage</option>
+            <option value="rogue">rogue</option>
+            <option value="hunter">hunter</option>
+            <option value="demonhunter">demonhunter</option>
+            <option value="warlock">warlock</option>
+        </select>
+    </div>
+
+    <div class="story">
+        <label for="story">Tell us your story:</label>
+
+        <div>
+            <textarea id="story"
+            rows="5" cols="33">
+            One day, i came across an old friend...
+            </textarea>
+        </div>
+    </div>
+    <div>
+        <input type="submit" id="btn_final">
+    </div>
+
+</form>
+</body>
+</html>

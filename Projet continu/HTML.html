@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML</title>
+        <meta charset="utf-8">
+        <style>
+            body{background-color: beige;}
+            nav ul li{list-style: none;
+                font-size: 20px;
+                display: inline;
+                padding: 0 10px;
+            }
+            #h1{width: 100%;
+                text-align: center;
+                margin-top: 5%;
+                
+            }
+            nav{width: 100%;
+                text-align: center;
+                margin-top: 5%;
+            }
+            button{width: 100px;
+                    font-size: large;
+                    border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="h1">
+            <h1>HTML</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><button>Accueil</button></a></li>
+                <li><a href="CSS.html"><button>CSS</button></a></li>
+                <li><a href="Javascript.html"><button>Javascript</button></a></li>
+                <li><a href="Web_API.html"><button>Web API</button></a></li>
+            </ul>
+        </nav>    
+        <h2>Liste des balises</h2>
+        <ul>
+            <li>&lt;html&gt;:Balise principale.</li>
+            <li>&lt;head&gt;:En-tête de la page,contient les metadata,titre,scripts,stlyes.</li>
+            <li> &lt;p&gt; :The HTML &lt;p&gt; element définit un Paragraphe </li>
+            <li>&lt;a href=""&gt;:lien hypertexte.<br>example :<a href="https://www.w3schools.com/html/html_links.asp">Cliquer ici</a></li>
+            <li>&lt;h1&gt;:Titre de niveau 1.<br>example :<h1>Titre de niveau 1</h1></li>
+            <li>&lt;h2&gt;:Titre de niveau 2.<br>example :<h2>Titre de niveau 2</h2></li>
+            <li>&lt;div&gt;:le conteneur générique du contenu du flux.<br>
+                <div style="color:#0000FF">
+                    <h3>exemple head div 。</h3>
+                    <p>exemple paragraph div。</p>
+                </div>
+            </li>
+            <li>&lt;strong&gt; :Transforme le texte en caractères gras.<br> exemple: <strong>Texte gras</strong></li>
+            <li>&lt;i&gt; :Transforme le texte en caractères <i>obliques</i>.</li>
+            <li>&lt;u&gt;: <u>tiret bas.</u></li>
+            <li>&lt;span&gt;:un conteneur générique en ligne (inline) pour les <span style="color:red">contenus phrasés</span>.</li>
+            <li>&lt;!-- commentaire contenu --&gt;</li>
+            <li>&lt;table&gt;:Tableau</li>
+            <li>&lt;caption&gt;:Titre du tableau</li>
+            <li>&lt;tr&gt;:Ligne de tableau</li>
+            <li>&lt;th&gt;:Cellule d'en-tête</li>
+            <li>&lt;td&gt;:Cellule</li>
+            <li>&lt;thead&gt;:Section de l'en-tête du tableau</li>
+            <li>&lt;tbody&gt;:Section du corps du tableau</li>
+            <li>&lt;tfoot&gt;:Section du pied du tableau
+                <br>exemples de tableau:
+                <table border="1">
+                    <caption>Tableau</caption>
+                    <colgroup width="400">
+                        <col bgcolor="white">
+                        <col bgcolor="grey">
+                        <col bgcolor="orange">
+                    </colgroup>
+                    <tr height="150" align="center">
+                        <td><a href="https://www.youtube.com/">Youtube</a></td>
+                        <td bgcolor="violate"><input type="text"></td>
+                        <td><button type="">Click</button></td>
+                    </tr>
+                    <tr height="150">
+                        <td bgcolor="red">
+                            <label for="number">Choisir un nombre:</label>
+                            <input type="number" id="number">
+                        </td>
+                        <td align="center"><img src="favicon_labo.ico" width="60px" height="60px"></td>
+                        <td><label for="phone">Enter your phone number:</label>
+                            <input type="tel" id="phone" name="phone"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    required>
+                            <small>Format: 123-456-7890</small>
+                        </td>
+                    </tr>
+                    <tr height="150">
+                        <td bgcolor="green">
+                            <ul>
+                                <li>xixixi</li>
+                                <li>hehehe</li>
+                            </ul>
+                        </td>
+                        <td bgcolor="brown">The <abbr title="United States of America">USA</abbr> was founded in 1787.</td>
+                        <td bgcolor="yellow">
+                            <fieldset>
+                                <legend>Hello world</legend>
+                                <u>HAHAHA</u>
+                            </fieldset>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+
+            <li>&lt;form&gt;:Formulaire</li>
+            <li>&lt;input /&gt;:Champ de formulaire (texte, mot de passe, case à cocher, bouton, etc.)
+                <form>
+                    <fieldset>
+                        <legend>exemples de formulaire</legend>
+                        <br>checkbox:
+                            <div>
+                                <input type="checkbox" id="checked" checked>
+                                <label for="checked">Checked</label>
+                            </div>
+                        <br>button:
+                            <div>
+                                <input type="button" value="button">
+                            </div>
+                        <br>radio:
+                        <fieldset>
+                            <legend>Select le réveil:</legend>
+                            <div>
+                                <input type="radio" id="didi" name="réveil" value="didi"
+                                    >
+                                <label for="didi">Didi</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="dada" name="réveil" value="dada"
+                                    >
+                                <label for="dada">Dada</label>
+                            </div>
+                        </fieldset>
+                        <br>email: 
+                            <div>
+                                <label for="email">Enter your google.com email:</label>
+                                <input type="email" id="email" pattern=".+@google\.com" size="30" required>
+                            </div>    
+                        <br>password:   
+                            <div>
+                                <label for="pass">Password (8 characters minimum):</label>
+                                <input type="password" id="pass" 
+                                        minlength="8" required>
+                            </div>
+                        <br>submit:
+                            <div>
+                                <input type="submit" value="Envoyer le formulaire">
+                            </div>
+                    </fieldset>
+                </form>
+            </li>
+        </ul>
+    </body>
+</html>

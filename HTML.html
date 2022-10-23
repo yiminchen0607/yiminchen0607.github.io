@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>HTML</h1>
+<p><a href="index.html">Retourner ver page d'accueil</a></p>
+<a href="CSS.html">CSS</a>
+<a href="Javascript.html">Javascript</a>
+<a href="Web_API.html">Web API</a>
+<ul>
+<li><a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Introduction to HTML</a></li>
+<li><a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML">L'en-tete et les métadonnées</a></li>
+<li><a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals">La gestion du text</a></li>
+<li><a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">Les hyperliens et introduction au menus</a></li>
+<li><a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure">Structure d'une page web</a></li>
+<li><a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML">Les images en HTML</a></li>
+<li><a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Tables/Basics">Introduction au tableaux</a></li>
+<li><a href="https://www.youtube.com/watch?v=g_u3U2BtK88&list=PLjwdMgw5TTLUeixVGPNl1uZNeJy4UY6qX&index=12">video les tables</a></li>
+<li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/div">&lt;div&gt;:l'&eacute;l&eacute;ment de division du contenu</a></li>
+<li><a href="https://www.cloudflare.com/fr-fr/learning/ddos/glossary/hypertext-transfer-protocol-http/">Le protocole HTTP</a></li>
+<li><a href="https://www.leptidigital.fr/productivite/caracteres-speciaux-html-2-19297/">Caractères spéciaux en XML/HTML</a></li>
+</ul>
+<p><b><i>Liste de balses:</i></b></p>
+<p>&lt;head&gt; HTML element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.</p>
+<p>The &lt;title&gt; HTML element defines the document's title that is shown in a Browser's title bar or a page's tab.</p>
+<p> &lt;style&gt; HTML element contains style information for a document, or part of a document.</p>
+<p> &lt;p&gt; :The HTML &lt;p&gt; element defines a paragraph </p>
+<p> &lt;strong&gt; :Transforme le texte en caractères gras. Exemple: <strong>Texte gras</strong> </p>
+<p>&lt;a href=""&gt; :The HTML &lt;a&gt; tag defines a hyperlink</p>
+<p>href attribute, which indicates the link's destination</p>
+<p>example :<a href="https://www.w3schools.com/html/html_links.asp">Cliquer ici</a></p>
+<p>&lt;div&gt;:le conteneur générique du contenu du flux.</p>
+<div style="color:#0000FF">
+    <h2>exempla head div exemple head。</h2>
+    <p>exempla paragraph div exemple paragraph。</p>
+</div>
+<p>&lt;hr /&gt;&eacute;crire un line <hr></p>
+<p>&lt;br&gt;changer une<br> autre ligne</p>
+<p>&lt;table&gt;:defines an HTML table</p>
+<p>&lt;colgroup&gt;:formaliser les columns de table
+<p>&lt;tr&gt;:specifies a row in an HTML table</p>
+<p>&lt;td&gt;:specifies a standard data cell in an HTML table</p>
+<p>&lt;th&gt;:specifies a header cell in an HTML table</p>
+<p>&lt;thead&gt;: defines the header of an HTML table</p>
+<p>&lt;tbody&gt;:defines the body content (a set of rows) of an HTML table creating a separate semantic block in it.</p>
+<p>&lt;tfoot&gt;:defines the footer of an HTML table.</p>
+<p>colspan attribut specifies how many columns a table cell should span</p>
+<p>rowspan attribut specifies how many rows a table cell should span</p>
+<P>&lt;!-- commentaire contenu --&gt;<!--C'est un commentaire--></P>
+<p>&lt;img&gt;:inserer un image</p>
+<p>&lt;input&gt;:input something</p>
+<p>c'est <font color = 'red'>rouge</font></p>
+<p>&lt;div&gt;:l'élément de division du contenu,le conteneur générique du contenu du flux</p>
+<p>&lt;span&gt;:un conteneur générique en ligne (inline) pour les contenus phrasés</p>
+<p>J'ai les yeux <span style="color:blue;font-weight:bold">bleu</span>
+<div >
+    <p>&lt;div&gt;:l'élément de division du contenu,le conteneur générique du contenu du flux</p>
+    <p>&lt;span&gt;:un conteneur générique en ligne (inline) pour les contenus phrasés</p>
+    <p>&lt;input&gt;:l'élément de saisie dans un formulaire</p>
+    <p><b>Voici les exemples:</b></p>
+    <input 
+       type="button"
+       value="Add to favorites">
+    <fieldset>
+        <legend>Choose your hero's features:</legend>
+    
+        <div>
+          <input type="checkbox" id="scales" 
+                 checked>
+          <label for="scales">Scales</label>
+        </div>
+    
+        <div>
+          <input type="checkbox" id="giant" >
+          <label for="giant">giant</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Select a alarm sound:</legend>
+    
+        <div>
+          <input type="radio" id="didi" name="alarme" value="didi"
+                 checked>
+          <label for="didi">DIdi</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="dangdang" name="alarme" value="dangdang">
+          <label for="dangdang">Dangdang</label>
+        </div>
+    </fieldset>
+    <label for="email">Enter your google.com email:</label>
+
+    <input type="email" id="email"
+       pattern=".+@google\.com" size="30" required>
+       <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+    </div>
+    
+    <div>
+      <label for="pass">Password (8 characters minimum):</label>
+      <input type="password" id="pass" 
+              minlength="8" required>
+    </div>
+    <div>
+      <input type="submit" value="Sign in">
+    </div>
+    <div>
+      <input type="submit" value="Envoyer le formulaire">
+    </div>
+    <div>
+      <label for="select country">Choose a country:</label>
+
+      <select name="country" id="select country">
+      <option value="">--Please choose an option--</option>
+      <option value="Canada">Canada</option>
+      <option value="Usa">Usa</option>
+      <option value="Mexico">Mexico</option>
+      <option value="Peru">Peru</option>
+      <option value="Brazil">Brazil</option>
+      <option value="Colombia">Colombia</option>
+      </select>
+    </div>
+
+</body>
+</html>

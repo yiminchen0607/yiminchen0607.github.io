@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+    <meta charset="utf-8">
+    <style>
+        body{background-color: beige;}
+        ul li{list-style: none;
+            font-size: 20px;
+            display: inline;
+            padding: 0 10px;
+        }
+        #h1{width: 100%;
+            text-align: center;
+            margin-top: 5%;
+            
+        }
+        nav{width: 100%;
+            text-align: center;
+            margin-top: 5%;
+        }
+        button{width: 100px;
+                font-size: large;
+                border-radius: 10px;
+        }
+        #wrapper{width: 100%;
+            margin-top: 3%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="h1">
+        <h1>API</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><button>Accueil</button></a></li>
+            <li><a href="HTML.html"><button>HTML</button></a></li>
+            <li><a href="CSS.html"><button>CSS</button></a></li>
+            <li><a href="Javascript.html"><button>Javascript</button></a></li>
+        </ul>
+    </nav>
+    
+    <div id="wrapper">
+        <h1>Richard Smith un guitariste merveilleux</h1>
+        <div id="player"></div>
+    </div>
+    
+    <!--source: "https://developers.google.com/youtube/iframe_api_reference?hl=fr#Playback_controls -->
+    <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        var player;
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('player', {
+            height: '360',
+            width: '640',
+            videoId: 'RCGGG9piAGY',
+            events: {
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerStateChange
+            }
+          });
+        }
+        function onPlayerReady(event) {
+          event.target.playVideo();
+        }
+        var done = false;
+        function onPlayerStateChange(event) {
+          if (event.data == YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo);
+            done = true;
+          }
+        }
+        function stopVideo() {
+          player.stopVideo();
+        }
+      </script>
+</body>
+</html>
