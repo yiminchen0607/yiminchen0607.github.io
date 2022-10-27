@@ -68,6 +68,7 @@
     #choose{
         font:1rem 'Fira Sans', sans-serif;
         font-weight: bold;
+        
     }
     .ligne3>.col2 label{
         font-style: italic;
@@ -164,7 +165,7 @@
     </td>
     <td class="col2">
         <fieldset class="sodas">
-            <legend>Choose sodas:</legend>
+            <legend>Choisir sodas:</legend>
             <div>
               <input type="checkbox" id="Coca-Cola" 
                      checked>
@@ -178,60 +179,60 @@
         </fieldset>
     </td>
     <td class="col3">
-        <p>Choose your bedroom color:</p>
+        <p>Choisissezla color de  votre chambre à coucher:</p>
         <div>
             <input type="color" id="floor"
                 value="#e66465">
-            <label for="floor">floor</label>
+            <label for="floor">plancher</label>
         </div>
         <div>
             <input type="color" id="ceiling"
                     value="#f6b73c">
-            <label for="ceiling">ceiling</label>
+            <label for="ceiling">plafond</label>
         </div>
     </td>
 </tr>
 <tr class="ligne2">
     <td class="col1">
         <div>
-            <label for="username">Username:</label>
+            <label for="username">Nom d'utilisateur:</label>
             <input type="text" id="username">
         </div>
         <div>
-            <label for="pass">Password (8 characters minimum):</label>
+            <label for="pass">Mot de pass (8 characters minimum):</label>
             <input type="password" id="pass"
                    minlength="8" required>
         </div>
-        <input id="login" type="submit" value="Sign in">
+        <input id="login" type="submit" value="Se connecter">
     </td>
     <td class="col2">
         <div>
             <fieldset>
-                <label id="choose" for="monster">Choose a profile picture:</label>
-                <input type="file" id="monster" accept="image/ico, image/jpeg">
+                <label id="choose">Choisissez un photo:</label>
+                <input type="file" id="choose" accept="image/ico, image/jpeg">
             </fieldset>
         </div>
     </td>
     <td class="col3">
         <form>
             <fieldset>
-                <legend>Number of lotto ticket:</legend>
+                <legend>Numéro de loto:</legend>
                 <input type="text"/>
-                <input type="reset" value="Reset">
-                <input type="submit" value="$Submit$">
+                <input type="reset" value="réinitialisation">
+                <input type="submit" value="$Soumettre$">
             </fieldset>
         </form>
     </td>
 </tr>
 <tr class="ligne3">
     <td class="col1">
-        <label for="site-search">Search something?</label>
+        <label for="site-search">Chercher quelque chose?</label>
         <input type="search" id="site-search">
-        <button id="search">Search</button>
+        <button id="search">Chercher</button>
     </td>
     <td class="col2">
         <fieldset>
-        <legend>Audio settings:</legend>
+        <legend>Audio paramètre:</legend>
 
         <div>
             <input type="range" id="treble"
@@ -249,7 +250,7 @@
     </td>
     <td class="col3">
         <fieldset>
-            <legend>Number of hotdog (0-100):</legend>
+            <legend>Nombre de hotdogs (0-100):</legend>
             <input type="number" min="0" max="100">
         </fieldset>
     </td>
@@ -257,28 +258,32 @@
 <tr>
     <td>
         <article class="forecast">
-            <h1 id="forcasthead">Weather forecast for Laval</h1>
+            <h1 id="forcasthead">Prévisions météo pour Laval</h1>
             <article class="day-forecast">
                 <h2>28 septembre 2022</h2>
-                <p>Sunny.</p>
+                <p>Ensoleillée.</p>
             </article>
             <article class="day-forecast">
                 <h2>29 septembre 2022</h2>
-                <p>Periods of rain.</p>
+                <p>Périodes de pluie.</p>
             </article>
             <article class="day-forecast">
                 <h2>30 septembre 2022</h2>
-                <p>Heavy rain.</p>
+                <p>Pluie forte.</p>
             </article>
         </article>
     </td>
     <td>
-        <p>Rain is expected to change to snow Thursday through Friday in areas of northeastern Quebec, bordering Labrador. </p>
+        <p>La pluie devrait se changer en neige de jeudi à vendredi dans les régions du nord-est du Québec, à la frontière du Labrador.</p>
         <aside>
-            <p>Visit our Complete Guide to Fall 2022 for an in-depth look at the Fall Forecast, tips to plan for it and much more!</p>
+            <p>Visitez notre guide complet de l'automne 2022 pour un aperçu approfondi des prévisions d'automne, 
+                des conseils pour le planifier et bien plus encore!
+            </p>
         </aside>
 
-        <p>Only a few communities, such as Fermont and Schefferville, Que., are expected to be affected. Up to 15 cm could accumulate by the time the system departs.</p>
+        <p>Seules quelques collectivités, comme Fermont et Schefferville, au Québec, devraient être touchées. 
+            Jusqu'à 15 cm pourraient s'accumuler au moment du départ du système.
+        </p>
 
 
     </td>
@@ -301,7 +306,7 @@
 <form>
     <div class="rad">
         <fieldset>
-            <legend>Choose your favorite chanteur</legend>
+            <legend>Choisissez votre chanteur préféré</legend>
         
             <input type="radio" id="MJ">
             <label for="MJ">MJ</label><br/>
@@ -315,9 +320,9 @@
     </div>
 
     <div class="select">
-        <label for="champion-select">Choose a champion:</label>
+        <label for="champion-select">Choisissez un champion:</label>
         <select id="champion-select">
-            <option value="">--Please choose an option--</option>
+            <option value="">--Veuillez choisir une option--</option>
             <option value="warrior">warrior</option>
             <option value="mage">mage</option>
             <option value="rogue">rogue</option>
@@ -328,12 +333,12 @@
     </div>
 
     <div class="story">
-        <label for="story">Tell us your story:</label>
+        <label for="story">Racontez-nous votre histoire:</label>
 
         <div>
             <textarea id="story"
             rows="5" cols="33">
-            One day, i came across an old friend...
+            Un jour, je suis tombé sur un ami...
             </textarea>
         </div>
     </div>
